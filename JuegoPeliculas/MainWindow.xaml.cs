@@ -95,5 +95,10 @@ namespace JuegoPeliculas
                 new Pelicula(titulo, pista, cartel, nivel, genero);
             vm.AddPelicula(pelicula);
         }
+
+        private void buttonEliminarPelicula_Click(object sender, RoutedEventArgs e)
+        {
+            vm.Peliculas.Remove(vm.PeliculaActual);
+        }
     }
 }

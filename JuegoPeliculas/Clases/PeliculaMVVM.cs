@@ -19,6 +19,7 @@ class PeliculaMVVM : ObservableObject
     private AzureService azureService;
     private List<String> _nivelesDificultad;
     private List<String> _generos;
+
     public PeliculaMVVM()
     {
         servicioPeliculas = new ListaPeliculasService();
@@ -67,7 +68,6 @@ class PeliculaMVVM : ObservableObject
         get { return _totalPeliculas; }
         set { SetProperty(ref _totalPeliculas, value); }
     }
-
 
     //Métodos
     public void Avanzar()
